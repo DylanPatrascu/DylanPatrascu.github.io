@@ -1,6 +1,6 @@
 {
   "name": "dylanpatrascu-github-io",
-  "homepage": "https://dylanpatrascu.github.io/",
+  "homepage": "http://DylanPatrascu.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -b main -d dist"
   },
   "dependencies": {
     "gh-pages": "^6.3.0",
