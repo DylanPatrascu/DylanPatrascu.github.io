@@ -1,6 +1,5 @@
 {
-  "name": "dylanpatrascu-github-io",
-  "homepage": "http://DylanPatrascu.github.io/",
+  "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,12 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
