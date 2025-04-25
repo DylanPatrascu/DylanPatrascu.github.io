@@ -6,29 +6,21 @@
   --text-color: #222;
   --form-text-color: #555;
   --footer-text-color: #888;
-}
-
-[data-theme="dark"] {
-  --background-color: #222;
-  --btn-color: #FFF;
-  --btn-text-color: #222;
-  --project-card-bg: #FFF;
-  --text-color: #FFF;
-  --form-text-color: #FFF;
-  --footer-text-color: #BBB;
+  --popup-bg: #222; /* Dark popup in light mode */
+  --popup-text-color: #FFF; 
+  --opposite-btn-color: #FFF;
+  --opposite-btn-text-color: #222;
 }
 
 body {
   background-color: var(--background-color);
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 60px;
+  margin: 0;
 }
+
 
 #root {
   display: flex;
   flex-direction: column;
-  gap: 60px;
 }
 
 h1, h2, h3, p {
@@ -61,4 +53,42 @@ p {
 
 .hover {
   cursor: pointer;
+}
+
+@media (width  >= 800px) {
+  #root {
+    gap: 100px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2, h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .sectionTitle {
+    margin-bottom: 60px;
+  }
+
+  @media (width  >= 1400px) {
+    #root {
+      gap: 200px;
+    }
+    h1 {
+      font-size: 48px;
+    }
+  
+    .sectionTitle {
+      margin-bottom: 75px;
+    }
+  
+  }
+
+}
+
+html {
+  height: 100vh;
 }

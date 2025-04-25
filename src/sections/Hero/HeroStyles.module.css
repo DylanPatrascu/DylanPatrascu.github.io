@@ -53,20 +53,6 @@
     }
   }
   
-  .colorModeContainer {
-    position: relative;
-  }
-  
-  .colorMode {
-    position: absolute;
-    right: 0;
-    width: 25px;
-  }
-  
-  .colorMode:hover {
-    cursor: pointer;
-  }
-  
   .description {
     max-width: 24ch;
   }
@@ -74,15 +60,18 @@
   .info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 20px;
+    
   }
   
   @media (width >= 800px) {
     .container {
       flex-direction: row-reverse;
       align-items: center;
-      justify-content: space-evenly;
-  
+      justify-content: center;
+      
       .hero {
         max-width: 350px;
         width: 350px;

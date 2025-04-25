@@ -1,0 +1,39 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--bg-color, #222);
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    max-width: 1200px; /* Centers the nav items */
+  }
+  
+  .navList li {
+    color: #f2f2f2;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.2s ease;
+  }
+  
+  .navList li:hover {
+    color: var(--accent-color, #00ccff);
+  }
+  
+  @media (max-width: 768px) {
+    .navList {
+      gap: 1rem;
+      font-size: 0.9rem;
+      padding: 1rem;
+    }
+  }
+  
