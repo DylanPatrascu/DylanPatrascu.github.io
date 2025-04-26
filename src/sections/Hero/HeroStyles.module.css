@@ -87,3 +87,13 @@
       }
     }
   }
+  .scrollGif {
+    position: absolute;
+    bottom: 0px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;  /* Optional: control size */
+    height: auto;
+    z-index: 10; /* Make sure it stays visible */
+  }
+  

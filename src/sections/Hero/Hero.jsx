@@ -4,6 +4,7 @@ import linkedin from "../../assets/linkedin-light.svg"
 import github from "../../assets/github-light.svg"
 import itchio from "../../assets/itch-light.svg"
 import resume from "../../assets/DylanPatrascuResume.pdf"
+import scrollGif from "../../assets/mouse-scroll.gif"
 
 
 function Hero() {
@@ -25,6 +26,7 @@ function Hero() {
                 <button className="hover">Resume</button>
             </a>
         </div>
+        <img className={styles.scrollGif} src={scrollGif} alt="Scroll indicator"/>
         </section>
   )
 }
