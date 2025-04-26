@@ -71,7 +71,7 @@ function Projects() {
       src: CannonballRun,
       desc: "Cannonball Run Header",
       header: "Cannonball Run",
-      paragraph: "Start your engines!",
+      paragraph: "Buckle up!",
       date: "Jan 2025 – April 2025",
       tech: "Unity 3D, C#, GitHub, Agile",
       description: `Based off of the real-life Cannonball Run race, we created a roguelike 3D racing game with branching tracks, where your goal is to make it to the other side of a cyberpunk America.
@@ -88,7 +88,7 @@ function Projects() {
       src: Shift,
       desc: "Shift Header",
       header: "Shift",
-      paragraph: "Buckle up!",
+      paragraph: "Start your engines!",
       date: "Dec 2024",
       tech: "Unity 3D, C#, GitHub, Unity Editor Tools",
       description: `A street racing game with reactive audio systems.

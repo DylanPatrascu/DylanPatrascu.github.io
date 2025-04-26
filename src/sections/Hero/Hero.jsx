@@ -21,12 +21,14 @@ function Hero() {
                 <a href="https://github.com/dylanpatrascu" target="_blank"> <img src={github} alt="GitHub Icon"/></a>
                 <a href="https://dylanpatrascu.itch.io" target="_blank"> <img src={itchio} alt="Itch.io Icon"/></a>
             </span>
-            <p className={styles.description}>A dedicated fourth-year computer science student focused on game development.</p>
+            <p className={styles.description}>A computer science graduate with a passion for game development.</p>
             <a href={resume} target="_blank">
                 <button className="hover">Resume</button>
             </a>
         </div>
+        {/*
         <img className={styles.scrollGif} src={scrollGif} alt="Scroll indicator"/>
+        */}
         </section>
   )
 }
