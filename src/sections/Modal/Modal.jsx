@@ -1,5 +1,4 @@
 import styles from "./ModalStyles.module.css";
-
 function Modal({ isOpen, onClose, project, isExperience = false }) {
   if (!isOpen) return null;
 
@@ -8,7 +7,15 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         <button className={styles.closeBtn} onClick={onClose}>×</button>
 
-        {project.logo && <img src={project.logo} alt={project.company} />}
+        {/* Show correct image depending on mode */}
+        {project.logo && isExperience && (
+          <img src={project.logo} alt={project.company} />
+        )}
+        {project.src && !isExperience && (
+          <img src={project.src} alt={project.desc} />
+        )}
+
+        {/* Content */}
         <h2>{project.header || project.title}</h2>
 
         {isExperience ? (
@@ -46,4 +53,3 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
 }
 
 export default Modal;
-
