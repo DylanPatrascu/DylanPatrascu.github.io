@@ -1,121 +1,141 @@
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: scale(0.96);
-    }
-    to {
-      opacity: 1;
-      transform: scale(1);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.96);
   }
-  
-  @keyframes backdropFade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    animation: backdropFade 250ms ease-in-out;
-    z-index: 1000;
+}
+
+@keyframes backdropFade {
+  from {
+    opacity: 0;
   }
-  
-  .modal {
-    background: white;
-    color: black;
-    padding: 2rem;
-    border-radius: 12px;
-    max-width: 700px;
-    width: 90%;
-    max-height: 90vh;
-    overflow-y: auto;
-    position: relative;
-    animation: fadeIn 250ms ease-in-out;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    scrollbar-width: thin;
-    scrollbar-color: #ccc transparent;
+  to {
+    opacity: 1;
   }
-  
-  .modal img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
-  .modal h2 {
-    margin: 0 0 0.5rem 0;
-    font-size: 1.6rem;
-  }
-  
-  .modal h3 {
-    margin: 1.25rem 0 0.5rem;
-    font-size: 1.1rem;
-    color: #444;
-    text-align: left;
-  }
-  
-  .modal p {
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    white-space: pre-line;
-    text-align: left;
-  }
-  
-  .modal ul {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .modal ul li a {
-    color: #0987F2;
-    font-weight: 500;
-    text-decoration: underline;
-    transition: opacity 0.2s ease;
-  }
-  
-  .modal ul li a:hover {
-    opacity: 0.75;
-  }
-  
-  .closeBtn {
-    position: absolute;
-    top: 12px;
-    right: 16px;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    color: #666;
-    cursor: pointer;
-    transition: color 0.2s ease;
-  }
-  
-  .closeBtn:hover {
-    color: #000;
-  }
-  
-  /* Optional: smoother scroll inside modal */
-  .modal::-webkit-scrollbar {
-    width: 8px;
-  }
-  .modal::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 4px;
-  }
-  
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: backdropFade 250ms ease-in-out;
+  z-index: 1000;
+}
+
+.modal {
+  background: var(--text-color);
+  color: var(--background-color);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  animation: fadeIn 250ms ease-in-out;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  scrollbar-width: thin;
+  scrollbar-color: var(--background-color) var(--text-color);
+  padding: 3rem 2rem 2rem 2rem; /* more space at top */
+
+}
+
+/* Scrollbar for Chrome, Safari, Edge, Opera */
+.modal::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: var(--text-color);
+}
+
+.modal::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background-color: var(--background-color);
+  border-radius: 4px;
+  border: 2px solid var(--text-color); /* Optional padding effect */
+}
+
+.modal img {
+  margin-top: 2rem; /* pushes image down so X floats above it */
+  margin-bottom: 1rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.modal h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.6rem;
+}
+
+.modal h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 1.1rem;
+  color: var(--background-color);
+  text-align: left;
+}
+
+.modal p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--background-color);
+  white-space: pre-line;
+  text-align: left;
+}
+
+.modal ul {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.modal ul li a {
+  color: var(--background-color);
+  font-weight: 500;
+  text-decoration: underline;
+  transition: opacity 0.2s ease;
+}
+
+.modal ul li a:hover {
+  opacity: 0.75;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  background: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+  z-index: 1100;
+  border-radius: 20%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.closeBtn:hover {
+  background-color: var(--hover-color);
+}

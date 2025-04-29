@@ -1,15 +1,7 @@
 :root {
   --background-color: #FFF;
-  --btn-color: #0987F2;
-  --btn-text-color: #FFF;
-  --project-card-bg: #FFFFFF00;
   --text-color: #222;
-  --form-text-color: #555;
-  --footer-text-color: #888;
-  --popup-bg: #222; /* Dark popup in light mode */
-  --popup-text-color: #FFF; 
-  --opposite-btn-color: #FFF;
-  --opposite-btn-text-color: #222;
+  --hover-color: #ccc;
 }
 
 body {

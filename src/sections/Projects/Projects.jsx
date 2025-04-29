@@ -110,6 +110,7 @@ function Projects() {
       tech: "HTML/CSS/JS, React, Vite, Cloudflare, GitHub",
       description: `A personal portfolio site built with React.
       • Built with React and Vite for a snappy, modern feel
+      • Used APCA (Accessible Perceptual Contrast Algorithm) to randomize website theme while maintaining accessibility
       • Created a fully responsive layout for all screen sizes
       • Managed deployment and version control via GitHub and Cloudflare for domain hosting`,
       links: [

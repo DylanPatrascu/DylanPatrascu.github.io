@@ -5,13 +5,16 @@ import github from "../../assets/github-light.svg"
 import itchio from "../../assets/itch-light.svg"
 import resume from "../../assets/DylanPatrascuResume.pdf"
 import scrollGif from "../../assets/mouse-scroll.gif"
-
+import setThemeVars from '../../common/SetTheme';
 
 function Hero() {
   return (
     <section id="hero" className={styles.container}>
         <div className={styles.colorModeContainer}>
-            <img className={styles.hero} src={heroImage} alt="Photo of Dylan Patrascu"/>
+            <div className={styles.imageWrapper}>
+                <img className={styles.hero} src={heroImage} alt="Photo of Dylan Patrascu" />
+                <button className={styles.colorMode} onClick={setThemeVars}>?</button>
+            </div>
         </div>
         <div className={styles.info}>
             <h1>Dylan<br/> Patrascu</h1>
@@ -26,10 +29,8 @@ function Hero() {
                 <button className="hover">Resume</button>
             </a>
         </div>
-        {/*
-        <img className={styles.scrollGif} src={scrollGif} alt="Scroll indicator"/>
-        */}
-        </section>
+        {/* <img className={styles.scrollGif} src={scrollGif} alt="Scroll indicator"/> */}
+    </section>
   )
 }
 

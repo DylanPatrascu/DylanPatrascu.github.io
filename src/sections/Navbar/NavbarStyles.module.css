@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--bg-color, #222);
+    background-color: var(--text-color);
     width: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   }
@@ -18,7 +18,7 @@
   }
   
   .navList li {
-    color: #f2f2f2;
+    color: var(--background-color);
     font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
@@ -26,7 +26,7 @@
   }
   
   .navList li:hover {
-    color: var(--accent-color, #00ccff);
+    color: var(--hover-color);
   }
   
   @media (max-width: 768px) {

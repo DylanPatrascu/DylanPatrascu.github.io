@@ -27,18 +27,18 @@ input, textarea {
     border: #888 1px solid;
     box-sizing: border-box;
     justify-self: center;
-    background-color: var(--background-color);
-    color: var(--form-text-color);
+    background-color: var(--text-color);
+    color: var(--background-color);
 
 }
 
 ::placeholder {
-    color: var(--form-text-color);
+    color: var(--background-color);
 }
 
 input[type="submit"] {
-    background-color: var(--btn-color);
-      color: var(--btn-text-color);
+    background-color: var(--text-color);
+      color: var(--background-color);
       border: none;
       border-radius: 20px;
       width: 126px;
