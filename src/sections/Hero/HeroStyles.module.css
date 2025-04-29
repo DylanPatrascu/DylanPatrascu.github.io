@@ -6,6 +6,7 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
+  position: relative; /* To ensure the arrow is positioned relative to this container */
 
   .hero {
     max-width: 200px;
@@ -18,10 +19,6 @@
 
     a {
       margin: 0;
-
-      img {
-        width: 30px;
-      }
     }
   }
 
@@ -64,21 +61,21 @@
 }
 
 .imageWrapper {
-position: relative;
-display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .colorMode {
   position: absolute;
-  top: 10px; /* Keeps it aligned from the top */
-  right: 5px; /* Move the button further left by decreasing the value */
-  height: 50px; /* Fixed height for the circular shape */
-  font-size: 2rem; /* Adjust font size */
+  top: 10px;
+  right: 5px;
+  height: 50px;
+  font-size: 2rem;
   text-align: right;
   background-color: var(--text-color);
   color: var(--background-color);
   border: none;
-  border-radius: 50%; /* Rounded shape */
+  border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s ease;
 }
@@ -87,35 +84,69 @@ display: inline-block;
   transform: scale(1.05);
 }
 
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--text-color);
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20px; /* Position it near the bottom */
+  left: 50%;
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 100px; /* Set the size */
+  height: 100px;
+  stroke: var(--text-color);
+  z-index: 10; /* Ensure the arrow stays above other elements */
+}
+
+.wiggle {
+  animation: wiggle 1s ease-in-out infinite; /* Wiggling effect */
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translateX(-50%) translateY(0);
+  }
+  25% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+  50% {
+    transform: translateX(-50%) translateY(0);
+  }
+  75% {
+    transform: translateX(-50%) translateY(5px);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+}
 
 @media (width >= 800px) {
   .container {
-      flex-direction: row-reverse;
-      align-items: center;
-      justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
 
-      .hero {
-          max-width: 350px;
-          width: 350px;
-      }
+    .hero {
+      max-width: 350px;
+      width: 350px;
+    }
+  }
+}
+
+@media (width < 800px) {
+  .arrow {
+    bottom: -25px; /* Move the arrow up to avoid overlapping the button */
   }
 }
 
 @media (width >= 1400px) {
   .container {
-      .hero {
-          max-width: 400px;
-          width: 400px;
-      }
+    .hero {
+      max-width: 400px;
+      width: 400px;
+    }
   }
-}
-
-.scrollGif {
-  position: absolute;
-  bottom: 0px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: auto;
-  z-index: 10;
 }
