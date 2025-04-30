@@ -117,8 +117,8 @@ body::-webkit-scrollbar-thumb {
 
 .closeBtn {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 1px;
+  right: 15px;
   width: 40px;
   height: 40px;
   font-size: 1.5rem;
@@ -128,14 +128,20 @@ body::-webkit-scrollbar-thumb {
   cursor: pointer;
   transition: color 0.2s ease, background 0.2s ease;
   z-index: 1100;
-  border-radius: 20%;
+  border-radius: 10%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 1;
   margin-top: 1rem;
 }
 
 .closeBtn:hover {
   background-color: var(--hover-color);
+}
+
+.exp {
+  font-weight: 100;
+  color: var(--background-color)
 }

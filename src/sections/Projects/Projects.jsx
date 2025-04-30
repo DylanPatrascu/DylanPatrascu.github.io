@@ -27,6 +27,10 @@ function Projects() {
         • Built an interactive particle system that amplified game feedback and immersion
         Judge’s Choice – Best in Game Mechanics & Fun
         People’s Choice Award`,
+        media: [
+          { type: "image", src: BreakingBob, alt: "Breaking Bob Screenshot 1" },
+          { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Breaking Bob Demo" }
+        ],
       links: [
         { label: "GitHub", url: "https://github.com/DylanPatrascu/WreckingGame" },
         { label: "Itch.io", url: "https://jkrupa.itch.io/breaking-bob" }
@@ -39,12 +43,16 @@ function Projects() {
       paragraph: "Race to collect furniture from the house to your truck!",
       date: "Jan 2025",
       tech: "Unity 2D, C#, Aseprite, GitHub",
-      description: `Features a charming pixel art style and intuitive puzzle mechanics.
+      description: `Features a charming pixel art style and intuitive puzzle mechanics.\n
       • Created in 48 hours for GDS Micro-Jam 2025 in a a team of three with the theme "Micro"
       • Implemented player controller, player-environment interactions, and level design
       • Created all art and user interface assets using Aseprite
-      • Used GitHub Projects to track progress and coordinate development
+      • Used GitHub Projects to track progress and coordinate development\n
       Judge’s Choice for Best in Art`,
+      media: [
+        { type: "image", src: MicroMovers, alt: "Micro Movers Screenshot 1" },
+        { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Micro Movers Demo" }
+      ],
       links: [
         { label: "GitHub", url: "https://github.com/DylanPatrascu/MicroMovers" },
         { label: "Itch.io", url: "https://dylanpatrascu.itch.io/micro-movers" }
@@ -52,17 +60,21 @@ function Projects() {
     },
     {
       src: MarineBiologyVR,
-      desc: "VR Marine Biology Capstone",
-      header: "VR Marine Biology Capstone",
+      desc: "VR Biology Capstone",
+      header: "VR Biology Capstone",
       paragraph: "All aboard!",
       date: "Sept 2024 – April 2025",
       tech: "Unity 3D, C#, ShaderGraph, GitHub, Jira, Agile",
       description: `A VR simulation for exploring marine ecosystems. Designed for aquariums and public installations, it features intuitive gesture-based controls and accessibility features.
-    • Developed immersive minigames: satellite tagging, eDNA sampling puzzle, and BRUV deployment simulation
-    • Wrote a foliage shader to simulate seaweed swaying
-    • Implemented accessibility features, including captions for deaf users 
-    • Used Agile workflows with GitHub Projects, storyboards, and UML diagrams
-    • Collaborated with marine biology experts for educational accuracy`,
+      • Developed immersive minigames: satellite tagging, eDNA sampling puzzle, and BRUV deployment simulation
+      • Wrote a foliage shader to simulate seaweed swaying
+      • Implemented accessibility features, including captions for deaf users 
+      • Used Agile workflows with GitHub Projects, storyboards, and UML diagrams
+      • Collaborated with marine biology experts for educational accuracy`,
+    media: [
+      { type: "image", src: MarineBiologyVR, alt: "Marine Biology Screenshot 1" },
+      { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Marine Biology Demo" }
+    ],
       links: [
         { label: "GitHub", url: "https://github.com/asm2002/Offshore-Marine-Protected-Areas" }
       ]
@@ -80,6 +92,10 @@ function Projects() {
       • Built an adaptive difficulty system that scales AI and obstacles to game progression
       • Integrated garage stops with randomized upgrades to enhance replayability
       • Maintained project with GitHub and Agile principles`,
+      media: [
+        { type: "image", src: CannonballRun, alt: "Cannonball Run Screenshot 1" },
+        { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Cannonball Run Demo" }
+      ],
       links: [
         { label: "GitHub", url: "https://github.com/DylanPatrascu/CannonballRun" }
       ]
@@ -97,6 +113,10 @@ function Projects() {
       • Designed a prefab-based AI waypoint tool for modular traffic generation
       • Implemented a slow-motion mechanic with time-scaling and motion trails
       • Managed the full development pipeline with GitHub Projects`,
+      media: [
+        { type: "image", src: Shift, alt: "Shift Screenshot 1" },
+        { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Shift Demo" }
+      ],
       links: [
         { label: "GitHub", url: "https://github.com/DylanPatrascu/Shift" }
       ]
@@ -113,6 +133,10 @@ function Projects() {
       • Used APCA (Accessible Perceptual Contrast Algorithm) to randomize website theme while maintaining accessibility
       • Created a fully responsive layout for all screen sizes
       • Managed deployment and version control via GitHub and Cloudflare for domain hosting`,
+      media: [
+        { type: "image", src: PersonalWebsite, alt: "Website Screenshot 1" },
+        { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Website Demo" }
+      ],
       links: [
         { label: "Live Site", url: "https://dylanpatrascu.com/" },
         { label: "GitHub", url: "https://github.com/DylanPatrascu/DylanPatrascu.github.io" }
@@ -129,6 +153,10 @@ function Projects() {
       • Designed Scriptable Objects with two serialized lists for language keys/values
       • Built a custom Unity Editor window for translators
       • Ensured updates propagate across all languages automatically`,
+      media: [
+        { type: "image", src: LanguageLocalizationTool, alt: "Language Localization Screenshot 1" },
+        { type: "video", src: "https://www.youtube.com/embed/vvMA0aHCYWU?si=XvgpSQZ1BOK7Lkom", alt: "Language Localization Demo" }
+      ],
       links: [
         { label: "GitHub", url: "https://github.com/DylanPatrascu/LanguageLocalization" }
       ]

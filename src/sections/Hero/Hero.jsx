@@ -14,12 +14,12 @@ function Hero() {
         <div className={styles.colorModeContainer}>
             <div className={styles.imageWrapper}>
                 <img className={styles.hero} src={heroImage} alt="Photo of Dylan Patrascu" />
-                <button className={styles.colorMode} onClick={setThemeVars}>?</button>
+                <button className={styles.colorMode} onClick={setThemeVars}>✦</button>
             </div>
         </div>
         <div className={styles.info}>
             <h1>Dylan<br/> Patrascu</h1>
-            <h2>Game Developer</h2>
+            <h2>Game Programmer</h2>
             <span>
                 <a href="https://www.linkedin.com/in/dylanpatrascu" target="_blank"><LinkedInIcon className={styles.icon} /></a>
                 <a href="https://github.com/dylanpatrascu" target="_blank"><GitHubIcon className={styles.icon} /></a>

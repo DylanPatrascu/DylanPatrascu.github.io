@@ -1,4 +1,6 @@
 import styles from "./ModalStyles.module.css";
+import Carousel from "../Carousel/Carousel";
+
 function Modal({ isOpen, onClose, project, isExperience = false }) {
   if (!isOpen) return null;
 
@@ -12,7 +14,7 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
           <img src={project.logo} alt={project.company} />
         )}
         {project.src && !isExperience && (
-          <img src={project.src} alt={project.desc} />
+          <Carousel data={project.media} />
         )}
 
         {/* Content */}
@@ -24,7 +26,7 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
             <p>{project.location}</p>
             <p>{project.dates}</p>
             <h3>Responsibilities</h3>
-            <ul>
+            <ul className={styles.exp}>
               {project.description.map((item, i) => (
                 <li key={i}>{item}</li>
               ))}

@@ -6,6 +6,7 @@ import Modal from "../../sections/Modal/Modal";
 import unityLogo from "../../assets/unitylogo.png";
 import ministryLogo from "../../assets/ministrylogo.png";
 import pythonLogo from "../../assets/pythonlogo.png";
+import uwoLogo from "../../assets/UWO.svg"
 
 function Experience() {
   const [selectedJob, setSelectedJob] = useState(null);
@@ -15,7 +16,7 @@ function Experience() {
       logo: unityLogo,
       company: "Self-Employed",
       title: "Unity Tutor",
-      location: "London, ON",
+      location: "London, Canada",
       dates: "March 2025 - April 2025",
       description: [
         "• Taught Unity fundamentals, including scene setup and scripting.",
@@ -27,9 +28,10 @@ function Experience() {
       logo: ministryLogo,
       company: "Ministry of the Solicitor General",
       title: "Technical IT Assistant",
-      location: "Hamilton, ON",
-      dates: "May 2023 - August 2023 & May 2024 - August 2024",
+      location: "Hamilton, Canada",
+      dates: "May 2023 - August 2024",
       description: [
+        "• May 2023 - August 2023 & May 2024 - August 2024",
         "• Automated network drive mapping using Python to reduce user error.",
         "• Automated machine disposal metadata lookup with Python scripting.",
         "• Debugged a legacy VBScript program for Windows 11 compatibility.",
@@ -47,6 +49,18 @@ function Experience() {
         "• Taught Python programming to beginners with little experience.",
         "• Covered data structures, object-oriented programming, and intro data science.",
         "• Simplified complex concepts like recursion and algorithm efficiency."
+      ]
+    },
+    {
+      logo: uwoLogo, 
+      company: "University of Western Ontario",
+      title: "Undergraduate",
+      location: "London, Canada",
+      dates: "September 2021 - April 2025",
+      description: [
+        "• Honours BSc of Computer Science and Minor in Game Development",
+        "• 3.9 GPA - Dean's Honour List",
+        "• Member of the Game Development Society (GDS) & Fashion & Lifestyle Society (F&LS)"
       ]
     }
   ];

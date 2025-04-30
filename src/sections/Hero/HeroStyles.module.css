@@ -10,7 +10,13 @@
 
   .hero {
     max-width: 200px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 5px solid var(--text-color);
+    object-fit: cover;
   }
+  
 
   span {
     display: flex;
