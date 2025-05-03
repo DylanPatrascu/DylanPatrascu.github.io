@@ -21,18 +21,16 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
         <h2>{project.header || project.title}</h2>
 
         {isExperience ? (
-          <>
-            <p><strong>{project.company}</strong></p>
-            <p>{project.location}</p>
-            <p>{project.dates}</p>
-            <h3>Responsibilities</h3>
-            <ul className={styles.exp}>
-              {project.description.map((item, i) => (
-                <li key={i}>{item}</li>
-              ))}
-            </ul>
-          </>
-        ) : (
+            <>
+              <p><strong>{project.company}</strong></p>
+              <p>{project.location}</p>
+              <p>{project.dates}</p>
+              <h3>Responsibilities</h3>
+              <p>{project.description}</p>
+              <h3>Technologies Used</h3>
+              <p>{project.tech}</p>
+            </>
+          ) : (
           <>
             <p>{project.paragraph}</p>
             <h3>Date</h3>

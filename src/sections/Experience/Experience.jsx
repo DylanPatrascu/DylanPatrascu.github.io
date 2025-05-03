@@ -18,10 +18,11 @@ function Experience() {
       title: "Unity Tutor",
       location: "London, Canada",
       dates: "March 2025 - April 2025",
+      tech: "Unity 3D, C#, Google Suite, Zoom",
       description: [
-        "• Taught Unity fundamentals, including scene setup and scripting.",
-        "• Guided students through creating interactive environments and UIs.",
-        "• Implemented secure load/save systems using binary files."
+        `• Taught Unity fundamentals, including scene setup and scripting
+        • Guided students through creating interactive environments and UIs
+        • Implemented secure load/save systems using binary files`
       ]
     },
     {
@@ -30,13 +31,14 @@ function Experience() {
       title: "Technical IT Assistant",
       location: "Hamilton, Canada",
       dates: "May 2023 - August 2024",
+      tech: "Python, VBScript, Microsoft Office Suite",
       description: [
-        "• May 2023 - August 2023 & May 2024 - August 2024",
-        "• Automated network drive mapping using Python to reduce user error.",
-        "• Automated machine disposal metadata lookup with Python scripting.",
-        "• Debugged a legacy VBScript program for Windows 11 compatibility.",
-        "• Provided in-court technical support in high-pressure situations.",
-        "• Explained technical concepts to non-technical users effectively."
+        `• May 2023 - August 2023 & May 2024 - August 2024
+        • Automated network drive mapping using Python to reduce user error
+        • Automated machine disposal metadata lookup with Python scripting
+        • Debugged a legacy VBScript program for Windows 11 compatibility
+        • Provided in-court technical support in high-pressure situations
+        • Explained technical concepts to non-technical users effectively`
       ]
     },
     {
@@ -45,10 +47,11 @@ function Experience() {
       title: "Python Tutor",
       location: "Remote",
       dates: "December 2024 - March 2025",
+      tech: "Python, Google Suite, Zoom",
       description: [
-        "• Taught Python programming to beginners with little experience.",
-        "• Covered data structures, object-oriented programming, and intro data science.",
-        "• Simplified complex concepts like recursion and algorithm efficiency."
+        `• Taught Python programming to beginners with little experience
+        • Covered data structures, object-oriented programming, and intro data science
+        • Simplified complex concepts like recursion and algorithm efficiency`
       ]
     },
     {
@@ -57,15 +60,15 @@ function Experience() {
       title: "Undergraduate",
       location: "London, Canada",
       dates: "September 2021 - April 2025",
+      tech: "Unity, C#, C++, Python, Java, C, SQL, PHP, OpenGL, GitHub, Jira",
       description: [
-        "• Honours BSc of Computer Science and Minor in Game Development",
-        "• 3.9 GPA - Dean's Honour List",
-        "• Member of the Game Development Society (GDS) & Fashion & Lifestyle Society (F&LS)"
+        `• Honours BSc of Computer Science and Minor in Game Development
+        • 3.9 GPA - Dean's Honour List
+        • Member of the Game Development Society (GDS) & Fashion & Lifestyle Society (F&LS)`
       ]
     }
   ];
-  
-
+    
   return (
     <section id="experience" className={styles.container}>
       <h1 className="sectionTitle">Experience</h1>

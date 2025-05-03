@@ -23,6 +23,7 @@
     font-weight: 600;
     cursor: pointer;
     transition: color 0.2s ease;
+    font-family: "Montserrat", monospace;
   }
   
   .navList li:hover {
