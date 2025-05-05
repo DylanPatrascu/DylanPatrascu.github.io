@@ -14,7 +14,7 @@
     gap: 2rem;
     margin: 0 auto;
     padding: 1rem 2rem;
-    max-width: 1200px; /* Centers the nav items */
+    max-width: 1200px;
   }
   
   .navList li {

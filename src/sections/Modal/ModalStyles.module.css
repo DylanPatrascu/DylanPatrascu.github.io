@@ -46,11 +46,10 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   scrollbar-width: thin;
   scrollbar-color: var(--background-color) var(--text-color);
-  padding: 3rem 2rem 2rem 2rem; /* more space at top */
+  padding: 3rem 2rem 2rem 2rem;
 
 }
 
-/* Scrollbar for Chrome, Safari, Edge, Opera */
 .modal::-webkit-scrollbar,
 body::-webkit-scrollbar {
   width: 8px;
@@ -65,11 +64,11 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background-color: var(--background-color);
   border-radius: 4px;
-  border: 2px solid var(--text-color); /* Optional padding effect */
+  border: 2px solid var(--text-color);
 }
 
 .modal img {
-  margin-top: 2rem; /* pushes image down so X floats above it */
+  margin-top: 2rem;
   margin-bottom: 1rem;
   max-width: 100%;
   height: auto;

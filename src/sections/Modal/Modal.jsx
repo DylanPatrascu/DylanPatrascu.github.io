@@ -9,7 +9,6 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
       <div className={styles.modal} onClick={(e) => e.stopPropagation()}>
         <button className={styles.closeBtn} onClick={onClose}>×</button>
 
-        {/* Show correct image depending on mode */}
         {project.logo && isExperience && (
           <img src={project.logo} alt={project.company} />
         )}
@@ -17,7 +16,6 @@ function Modal({ isOpen, onClose, project, isExperience = false }) {
           <Carousel data={project.media} />
         )}
 
-        {/* Content */}
         <h2>{project.header || project.title}</h2>
 
         {isExperience ? (

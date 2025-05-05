@@ -29,7 +29,7 @@
     position: relative;
     width: 100%;
     aspect-ratio: 16 / 9;
-    margin-top: 2rem; /* pushes image down so X floats above it */
+    margin-top: 2rem;
   }
   
   .videoWrapper iframe {

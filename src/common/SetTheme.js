@@ -1,6 +1,5 @@
 import { calcAPCA } from "apca-w3";
 
-// Convert hex to RGB
 function hexToRgb(hex) {
   hex = hex.replace("#", "");
   const bigint = parseInt(hex, 16);
@@ -11,12 +10,10 @@ function hexToRgb(hex) {
   ];
 }
 
-// Convert RGB to hex
 function rgbToHex([r, g, b]) {
   return `#${[r, g, b].map(c => c.toString(16).padStart(2, '0')).join("")}`;
 }
 
-// Convert RGB to HSL
 function rgbToHsl([r, g, b]) {
   r /= 255;
   g /= 255;
@@ -26,7 +23,7 @@ function rgbToHsl([r, g, b]) {
   let h, s, l = (max + min) / 2;
 
   if (max === min) {
-    h = s = 0; // achromatic
+    h = s = 0;
   } else {
     const d = max - min;
     s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
@@ -41,7 +38,6 @@ function rgbToHsl([r, g, b]) {
   return [Math.round(h*360), Math.round(s*100), Math.round(l*100)];
 }
 
-// Convert HSL to RGB
 function hslToRgb([h, s, l]) {
   s /= 100;
   l /= 100;
@@ -61,14 +57,12 @@ function hslToRgb([h, s, l]) {
   return [r,g,b].map(v => Math.round((v + m) * 255));
 }
 
-// Lighten a color in hex
 function lightenHexColor(hex, amount = 20) {
   const hsl = rgbToHsl(hexToRgb(hex));
-  hsl[2] = Math.min(100, hsl[2] + amount); // lighten L
+  hsl[2] = Math.min(100, hsl[2] + amount);
   return rgbToHex(hslToRgb(hsl));
 }
 
-// Generate readable background/text pair
 function generateReadablePair() {
   let bg, fg, contrast;
   let tries = 0;
@@ -82,9 +76,9 @@ function generateReadablePair() {
   } while (contrast < 60 && tries < maxTries);
 
   if (tries === maxTries) {
-    console.warn("⚠️ Could not find a high-contrast pair. Using fallback.");
-    bg = "#654321"; // brown
-    fg = "#e0ffe0"; // light green
+    console.warn("Could not find a high-contrast pair. Using fallback.");
+    bg = "#654321";
+    fg = "#e0ffe0";
   }
 
   return { bg, fg };
@@ -97,13 +91,13 @@ function randomColor() {
 
 function setThemeVars() {
   const { bg, fg } = generateReadablePair();
-  const hover = lightenHexColor(bg, 20); // generate hover color by lightening bg
+  const hover = lightenHexColor(bg, 20);
 
   document.documentElement.style.setProperty("--background-color", bg);
   document.documentElement.style.setProperty("--text-color", fg);
   document.documentElement.style.setProperty("--hover-color", hover);
 
-  console.log(`🎨 Theme set:
+  console.log(`Theme set:
   • Background: ${bg}
   • Text: ${fg}
   • Hover: ${hover}`);

@@ -6,7 +6,7 @@
   text-align: center;
   height: 100dvh;
   min-height: 500px;
-  position: relative; /* To ensure the arrow is positioned relative to this container */
+  position: relative;
 
   .hero {
     max-width: 200px;
@@ -99,17 +99,17 @@
 
 .arrow {
   position: absolute;
-  bottom: 20px; /* Position it near the bottom */
+  bottom: 20px;
   left: 50%;
-  transform: translateX(-50%); /* Center it horizontally */
-  width: 100px; /* Set the size */
+  transform: translateX(-50%);
+  width: 100px;
   height: 100px;
   stroke: var(--text-color);
-  z-index: 10; /* Ensure the arrow stays above other elements */
+  z-index: 10;
 }
 
 .wiggle {
-  animation: wiggle 1s ease-in-out infinite; /* Wiggling effect */
+  animation: wiggle 1s ease-in-out infinite;
 }
 
 @keyframes wiggle {
@@ -145,7 +145,7 @@
 
 @media (width < 800px) {
   .arrow {
-    bottom: -25px; /* Move the arrow up to avoid overlapping the button */
+    bottom: -25px;
   }
 }
 
