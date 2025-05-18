@@ -1,8 +1,10 @@
 .container {
     text-align: center;
+    padding: 1%;
 
     p {
         font-size: 16px;
-        color: var(--text-color);
+        color: var(--extra-color);
+        font-weight: 400;
     }
 }

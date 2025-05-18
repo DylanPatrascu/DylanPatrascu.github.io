@@ -4,7 +4,7 @@ import './index.css';
 import App from './App.jsx';
 import setThemeVars from './common/SetTheme.js';
 
-setThemeVars();
+//setThemeVars();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

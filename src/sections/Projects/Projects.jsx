@@ -43,11 +43,49 @@ import LanguageLocalizationTool from "../../assets/Localization/Localization.png
 import LanguageLocalizationMenu1 from "../../assets/Localization/Menu1.png";
 import LanguageLocalizationMenu2 from "../../assets/Localization/Menu2.png";
 
+import VolleyBirds from "../../assets/Volleybirds/MainMenu.png";
+import VolleyBirdsControls from "../../assets/Volleybirds/Controls.png";
+import VolleyBirdsMenu from "../../assets/Volleybirds/Menu.png";
+import VolleyBirdsGo from "../../assets/Volleybirds/Go.png";
+import VolleyBirdsInGame from "../../assets/Volleybirds/InGame.png";
+import VolleyBirdsGameOver from "../../assets/Volleybirds/GameOver.png";
+import VolleyBirdsOutOfBounds from "../../assets/Volleybirds/OutOfBounds.png";
+
+
+
 
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
+    {
+      src: VolleyBirds,
+      desc: "Volleybirds Header",
+      header: "VolleyBirds",
+      paragraph: "A nice game of volleyball goes out of control.",
+      date: "May 2025",
+      tech: "Unity 2D, C#, GitHub, Procreate",
+      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
+        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
+        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
+        • Implemented both player controllers using one script and an enumeration
+        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
+        • Made dynamic collision behaviour between players and the ball, based on camera position
+        • Created 2D assets for the user interface and in-game obstacles`,
+        media: [
+          { type: "video", src: "https://www.youtube.com/embed/TZaQkwYhlzE?si=1ZlFjJh7maGZnD1S", alt: "VolleyBirds Demo" },
+          { type: "image", src: VolleyBirdsMenu, alt: "VolleyBirds Main Menu Screenshot" },
+          { type: "image", src: VolleyBirdsControls, alt: "VolleyBirds Controls Screenshot" },
+          { type: "image", src: VolleyBirdsGo, alt: "VolleyBirds In Game Screenshot" },
+          { type: "image", src: VolleyBirdsInGame, alt: "Breaking Bob In Game Screenshot 2" },
+          { type: "image", src: VolleyBirdsOutOfBounds, alt: "Breaking Bob In Game Screenshot 3" },
+          { type: "image", src: VolleyBirdsGameOver, alt: "VolleyBirds Game Over Screenshot" }
+        ],
+      links: [
+        { label: "GitHub", url: "https://github.com/DylanPatrascu/Volleybirds" },
+        { label: "Itch.io", url: "https://munchiepunchie.itch.io/volleybirds" }
+      ]
+    },
     {
       src: BreakingBob,
       desc: "Breaking Bob Header",
@@ -120,7 +158,7 @@ function Projects() {
       { type: "image", src: MarineeDNA, alt: "Offshore Adventures In Game Screenshot" }
     ],
       links: [
-        { label: "GitHub", url: "https://github.com/asm2002/Offshore-Marine-Protected-Areas" }
+        { label: "GitHub", url: "https://github.com/DylanPatrascu/VRMarineBiologyCapstone" }
       ]
     },
     {
@@ -148,7 +186,7 @@ function Projects() {
       ],
       links: [
         { label: "GitHub", url: "https://github.com/DylanPatrascu/CannonballRun" },
-        { label: "Itch.io", url: "https://munchiepunchie.itch.io/canonball-runs" }
+        { label: "Itch.io", url: "https://munchiepunchie.itch.io/cannonball-run" }
 
       ]
     },

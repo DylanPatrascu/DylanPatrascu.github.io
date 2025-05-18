@@ -95,6 +95,7 @@ function setThemeVars() {
 
   document.documentElement.style.setProperty("--background-color", bg);
   document.documentElement.style.setProperty("--text-color", fg);
+  document.documentElement.style.setProperty("--extra-color", fg);
   document.documentElement.style.setProperty("--hover-color", hover);
 
   console.log(`Theme set:

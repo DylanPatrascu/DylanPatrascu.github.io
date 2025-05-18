@@ -19,6 +19,8 @@
 
     p {
         font-size: 15px;
+        color: var(--extra-color);
+        font-weight: 400;
     }
 
     a:hover {

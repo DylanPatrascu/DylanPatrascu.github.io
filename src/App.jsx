@@ -10,10 +10,10 @@ import Experience from './sections/Experience/Experience'
 function App() {
   return (
     <>
+      <NavBar/>
       <div id="Top">
       <Hero/>
       </div>
-      <NavBar/>
       <div id="Projects">
       <Projects/>
       </div>
