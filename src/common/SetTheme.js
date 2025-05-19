@@ -66,7 +66,7 @@ function lightenHexColor(hex, amount = 20) {
 function generateReadablePair() {
   let bg, fg, contrast;
   let tries = 0;
-  const maxTries = 30;
+  const maxTries = 50;
 
   do {
     bg = randomColor();

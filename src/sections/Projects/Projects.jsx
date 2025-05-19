@@ -143,7 +143,7 @@ function Projects() {
       header: "Offshore Adventures",
       paragraph: "All aboard!",
       date: "Sept 2024 – April 2025",
-      tech: "Unity 3D, C#, ShaderGraph, GitHub, Jira, Agile",
+      tech: "Unity 3D, C#, ShaderGraph, GitHub",
       description: `A VR simulation for exploring marine ecosystems. Designed for aquariums and public installations, it features intuitive gesture-based controls and accessibility features.\n
       • Developed immersive minigames: satellite tagging, eDNA sampling puzzle, and BRUV deployment simulation
       • Wrote a foliage shader to simulate seaweed swaying
@@ -196,7 +196,7 @@ function Projects() {
       header: "Shift",
       paragraph: "Start your engines!",
       date: "Dec 2024",
-      tech: "Unity 3D, C#, GitHub, Unity Editor Tools",
+      tech: "Unity 3D, C#, GitHub, Unity Editor",
       description: `A street racing game with reactive audio systems.\n
       • Developed a realistic manual car controller with speedometer and tachometer user interface
       • Created a modular radio system using Scriptable Objects that changes tracks based on gear
@@ -222,7 +222,7 @@ function Projects() {
       header: "Personal Website",
       paragraph: "Yes, this website.",
       date: "Feb 2025 – Present",
-      tech: "HTML/CSS/JS, React, Vite, Cloudflare, GitHub",
+      tech: "React, Vite, Cloudflare, GitHub",
       description: `A personal portfolio site built with React.\n
       • Built with React and Vite for a snappy, modern feel
       • Used APCA (Accessible Perceptual Contrast Algorithm) to randomize website theme while maintaining accessibility
