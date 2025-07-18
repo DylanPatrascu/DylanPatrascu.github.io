@@ -31,9 +31,12 @@
   }
   
   @media (max-width: 768px) {
-    .navList {
-      gap: 1rem;
-      font-size: 0.9rem;
-      padding: 1rem;
-    }
+  .navList {
+    gap: 1rem;
+    padding: 1rem;
   }
+
+  .navList li {
+    font-size: 0.8rem;
+  }
+}

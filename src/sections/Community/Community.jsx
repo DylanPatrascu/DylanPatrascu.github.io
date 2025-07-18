@@ -7,11 +7,41 @@ import xpLogo from "../../assets/xplogo.png";
 import lojamLogo from "../../assets/lojamlogo.png";
 import gdsLogo from "../../assets/gdslogo.png";
 import minijamLogo from "../../assets/minijamlogo.png"
+import whimsideLogo from "../../assets/whimsidelogo.png"
+import unannouncedLogo from "../../assets/videogame.png"
 
 function Community() {
   const [selectedJob, setSelectedJob] = useState(null);
 
   const experiences = [
+    {
+      logo: whimsideLogo,
+      company: "Whimside",
+      title: "Playtester",
+      location: "Remote",
+      dates: "June 2025",
+      tech: "Steam, Godot, Google Suite",
+      description: [
+        `• Playtested in-development builds to identify bugs and glitches
+        • Documented and reported technical issues using Google Forms
+        • Provided detailed feedback on gameplay, UI/UX, and overall player experience
+        • Highlighted strengths and areas for improvement in game mechanics, visuals, and pacing`
+      ]
+    },
+    {
+      logo: unannouncedLogo,
+      company: "Unanounced",
+      title: "Playtester",
+      location: "Remote",
+      dates: "June 2025",
+      tech: "Steam, Unreal Engine, Google Suite",
+      description: [
+        `• Playtested in-development builds to identify bugs and glitches
+        • Documented and reported technical issues using Google Forms
+        • Provided detailed feedback on gameplay, UI/UX, and overall player experience
+        • Highlighted strengths and areas for improvement in game mechanics, visuals, and pacing`
+      ]
+    },
     {
       logo: xpLogo,
       company: "XP Game Summit",
