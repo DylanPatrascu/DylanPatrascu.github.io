@@ -9,6 +9,7 @@ import gdsLogo from "../../assets/gdslogo.png";
 import minijamLogo from "../../assets/minijamlogo.png"
 import whimsideLogo from "../../assets/whimsidelogo.png"
 import unannouncedLogo from "../../assets/videogame.png"
+import leagueLogo from "../../assets/leaguelogo.png"
 
 function Community() {
   const [selectedJob, setSelectedJob] = useState(null);
@@ -99,6 +100,19 @@ function Community() {
         • Submitted Micro Movers, a fast-paced 2D puzzle game
         • Took on dual roles as programmer and pixel artist
         • Handled development of player-world interactions, UI, and level design`
+      ]
+    },
+    {
+      logo: leagueLogo,
+      company: "League of Legends: Swarm Event",
+      title: "Atendee and Playtester",
+      location: "Toronto, Canada",
+      dates: "July 2024",
+      tech: "C++, Google Suite",
+      description: [
+        `• Attended Riot Games’ Toronto Swarm event as a community participant and early playtester
+        • Engaged with Riot developers in discussions about game design and upcoming features
+        • Playtested an unreleased game mode and provided hands-on feedback during live sessions`
       ]
     } 
   ];
