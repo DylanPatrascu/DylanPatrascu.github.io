@@ -105,7 +105,7 @@ function Community() {
     {
       logo: leagueLogo,
       company: "League of Legends: Swarm Event",
-      title: "Atendee and Playtester",
+      title: "Attendee and Playtester",
       location: "Toronto, Canada",
       dates: "July 2024",
       tech: "C++, Google Suite",
