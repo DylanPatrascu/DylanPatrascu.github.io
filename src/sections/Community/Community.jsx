@@ -10,11 +10,26 @@ import minijamLogo from "../../assets/minijamlogo.png"
 import whimsideLogo from "../../assets/whimsidelogo.png"
 import unannouncedLogo from "../../assets/videogame.png"
 import leagueLogo from "../../assets/leaguelogo.png"
+import steamLogo from "../../assets/steamlogo.png"
 
 function Community() {
   const [selectedJob, setSelectedJob] = useState(null);
 
   const experiences = [
+    {
+      logo: steamLogo,
+      company: "Steam Half-Day Workshop",
+      title: "Attendee",
+      location: "Montreal, Canada",
+      dates: "September 2025",
+      tech: "Steam, Google Suite",
+      description: [
+      `• Attended Steam’s Montreal Half-Day Workshop for teams newer to the platform
+      • Gained insights into platform updates, best practices, and release strategies
+      • Participated in Q&A sessions with the Steam Team to clarify publishing processes
+      • Provided feedback and ideas for bridging the gap between developers and players`
+      ]
+    },
     {
       logo: whimsideLogo,
       company: "Whimside",
