@@ -44,12 +44,9 @@ function Experience() {
       dates: "May 2023 - August 2024",
       tech: "Python, VBScript, Microsoft Office Suite",
       description: [
-        `• May 2023 - August 2023 & May 2024 - August 2024
-        • Automated network drive mapping using Python to reduce user error
-        • Automated machine disposal metadata lookup with Python scripting
-        • Debugged a legacy VBScript program for Windows 11 compatibility
-        • Provided in-court technical support in high-pressure situations
-        • Explained technical concepts to non-technical users effectively`
+        `• Reduced manual setup time by 30% (measured through IT team onboarding metrics) by automating network drive mapping and metadata lookup with Python.
+          • Debugged legacy VBScript programs for Windows 11 compatibility.
+          • Provided in-person and remote Tier 1 support (L1).`
       ]
     },
     {
@@ -60,9 +57,11 @@ function Experience() {
       dates: "September 2021 - April 2025",
       tech: "Unity, C#, C++, Python, Java, C, SQL, PHP, OpenGL, GitHub, Jira",
       description: [
-        `• Honours BSc of Computer Science and Minor in Game Development
-        • 3.9 GPA - Dean's Honour List
-        • Member of the Game Development Society (GDS) & Fashion & Lifestyle Society (F&LS)`
+        `• Bachelor of Science (Honours)
+         • Honours Specialization in Computer Science, Minor in Game Development
+          • 3.8 GPA – Dean’s Honour List 2021–2025
+          • Relevant Coursework: Game/Systems Programming & Design, Data Structures & Algorithms, Databases
+          • Extra-Curricular Activities: Game Development Society, Fashion & Lifestyle Society`
       ]
     }
   ];
