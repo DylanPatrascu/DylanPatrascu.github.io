@@ -5,7 +5,7 @@ import Modal from "../../sections/Modal/Modal";
 
 import unityLogo from "../../assets/unitylogo.png";
 import ministryLogo from "../../assets/ministrylogo.png";
-import pythonLogo from "../../assets/pythonlogo.png";
+import threeclipseLogo from "../../assets/threeclipse.jpg";
 import uwoLogo from "../../assets/UWO.svg"
 
 function Experience() {
@@ -13,22 +13,33 @@ function Experience() {
 
   const experiences = [
     {
+      logo: threeclipseLogo, 
+      company: "Threeclipse Games",
+      title: "Junior Programmer",
+      location: "Remote",
+      dates: "September 2025 - December 2025",
+      tech: "Unity, C#, Trello",
+      description: [
+        `• Collaborating in a 10-week training program to build a non-commercial game from concept to release, ending with publication on Steam.
+         • Collaborating 10+ hours per week with designers, artists, and testers under mentor guidance.`
+      ]
+    },{
       logo: unityLogo,
       company: "Self-Employed",
-      title: "Unity Tutor",
+      title: "Tutor (Unity & Python)",
       location: "London, Canada",
-      dates: "March 2025 - April 2025",
-      tech: "Unity 3D, C#, Google Suite, Zoom",
+      dates: "December 2024 - April 2025",
+      tech: "Unity 3D, C#, Python, Google Suite, Zoom",
       description: [
-        `• Taught Unity fundamentals, including scene setup and scripting
-        • Guided students through creating interactive environments and UIs
-        • Implemented secure load/save systems using binary files`
+        `• Delivered lessons on Unity fundamentals (scene setup, scripting, inventory systems) and Python programming (data structures, OOP, recursion).
+        • Improved student project quality by 25% (measured through assignment grading rubrics), by providing customized lessons on Unity fundamentals and Python programming.
+`
       ]
     },
     {
       logo: ministryLogo,
       company: "Ministry of the Solicitor General",
-      title: "Technical IT Assistant",
+      title: "Software Developer",
       location: "Hamilton, Canada",
       dates: "May 2023 - August 2024",
       tech: "Python, VBScript, Microsoft Office Suite",
@@ -39,19 +50,6 @@ function Experience() {
         • Debugged a legacy VBScript program for Windows 11 compatibility
         • Provided in-court technical support in high-pressure situations
         • Explained technical concepts to non-technical users effectively`
-      ]
-    },
-    {
-      logo: pythonLogo, 
-      company: "Self-Employed",
-      title: "Python Tutor",
-      location: "Remote",
-      dates: "December 2024 - March 2025",
-      tech: "Python, Google Suite, Zoom",
-      description: [
-        `• Taught Python programming to beginners with little experience
-        • Covered data structures, object-oriented programming, and intro data science
-        • Simplified complex concepts like recursion and algorithm efficiency`
       ]
     },
     {
