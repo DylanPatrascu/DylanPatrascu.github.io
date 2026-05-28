@@ -8,15 +8,38 @@ import lojamLogo from "../../assets/lojamlogo.png";
 import gdsLogo from "../../assets/gdslogo.png";
 import minijamLogo from "../../assets/minijamlogo.png"
 import whimsideLogo from "../../assets/whimsidelogo.png"
-import unannouncedLogo from "../../assets/videogame.png"
+import scallywagsLogo from "../../assets/Scallywags.png"
 import leagueLogo from "../../assets/leaguelogo.png"
 import steamLogo from "../../assets/steamlogo.png"
+import mgdLogo from "../../assets/MGD.jpg"
 
 function Community() {
   const [selectedJob, setSelectedJob] = useState(null);
 
   const experiences = [
     {
+      logo: mgdLogo,
+      company: "Montreal Game Developers",
+      title: "Member",
+      location: "Montreal, Canada",
+      dates: "September 2025 - Present",
+      tech: "Steam, Aseprite",
+      description: [
+      `• Attended events in the Montreal Game Developers scene, such as Game Dev Drinks, Backloggers, Art Lessons, and more`
+      ]
+    },{
+      logo: mgdLogo,
+      company: "Backloggers",
+      title: "Attendee",
+      location: "Montreal, Canada",
+      dates: "May 2026",
+      tech: "Steam",
+      description: [
+      `• Participated in Backloggers 2, a book-club style event where participants discuss design topics with a focus on retro games from the PS2 era and earlier
+      • Played Devil May Cry 1 and dissected design choices such as the infamous fixed-camera angles
+      • Contributed to a Design Jam, where we came up with a game concept using elements from Devil May Cry`
+      ]
+    },{
       logo: steamLogo,
       company: "Steam Half-Day Workshop",
       title: "Attendee",
@@ -45,8 +68,8 @@ function Community() {
       ]
     },
     {
-      logo: unannouncedLogo,
-      company: "Unanounced",
+      logo: scallywagsLogo,
+      company: "Scallywags",
       title: "Playtester",
       location: "Remote",
       dates: "June 2025",

@@ -7,21 +7,46 @@ import unityLogo from "../../assets/unitylogo.png";
 import ministryLogo from "../../assets/ministrylogo.png";
 import threeclipseLogo from "../../assets/threeclipse.jpg";
 import uwoLogo from "../../assets/UWO.svg"
+import STXLogo from "../../assets/STX.png"
 
 function Experience() {
   const [selectedJob, setSelectedJob] = useState(null);
 
   const experiences = [
     {
+      logo: STXLogo, 
+      company: "OVA",
+      title: "Junior Quality Analyst",
+      location: "Hybrid",
+      dates: "December 2025 - Present",
+      tech: "Unity, C#, Jira, Confluence",
+      description: [
+        `• Identified, documented, and verified bugs, fixes, and new features using tools such as Jira and Gitlab.
+        • Worked closely with developers and cross-functional teams in Agile Scrum sprints to support the development and testing of our SaaS and XR platforms, including daily standups and release testing.
+        • Developed a C# automation script to compare Unity Events CSV and JSON outputs against internal documentation, helping identify inconsistencies and improve data validation workflows.`
+      ]
+    },{
       logo: threeclipseLogo, 
-      company: "Threeclipse Games",
-      title: "Junior Programmer",
+      company: "Threeclipse Studios",
+      title: "Engineer",
+      location: "Remote",
+      dates: "January 2026 - Present",
+      tech: "Unity, C#, Trello",
+      description: [
+        `• Developed an Unity C# editor tool for JSON data importation and updating of shark-related Scriptable Objects, allowing for faster iteration on game balance.
+        • Engineered a save system supporting automatic, event-based, and exit-state persistence for game data, aquarium states, and offline reward tracking.
+        • Created a shark breeding and attribute framework in Unity C# that combined inherited traits to produce unique stat combinations and progression strategies.
+        • Integrated FMOD for all audio, such as music and sound effects, using a sub-module repository architecture.`
+      ]
+    },{
+      logo: threeclipseLogo, 
+      company: "Threeclipse Studios",
+      title: "Programmer",
       location: "Remote",
       dates: "September 2025 - December 2025",
       tech: "Unity, C#, Trello",
       description: [
-        `• Collaborating in a 10-week training program to build a non-commercial game from concept to release, ending with publication on Steam.
-         • Collaborating 10+ hours per week with designers, artists, and testers under mentor guidance.`
+        `• Designed and implemented all systems as the sole developer for the project, including Steamworks integration in Unity, Steam achievements, and branching game endings driven by player decisions`
       ]
     },{
       logo: unityLogo,

@@ -52,13 +52,105 @@ import VolleyBirdsGameOver from "../../assets/Volleybirds/GameOver.png";
 import VolleyBirdsOutOfBounds from "../../assets/Volleybirds/OutOfBounds.png";
 
 
+import StellarX from "../../assets/StellarX/StellarX.png"
+import StellarXAirplane from "../../assets/StellarX/StellarX_Airplane.jpg"
+import StellarXWinter from "../../assets/StellarX/StellarX_ArcticWinterland.png"
 
+import Sharkarama from "../../assets/Sharkarama/SharkaramaHeader.png"
+import SharkaramaActiveMode from "../../assets/Sharkarama/Active Mode.png"
+import SharkaramaCardOpen from "../../assets/Sharkarama/Card Open Screenshot.png"
+import SharkaramaSharks from "../../assets/Sharkarama/Lots of Sharks.png"
+import SharkaramaMenu from "../../assets/Sharkarama/Menu.png"
+import SharkaramaPassive1 from "../../assets/Sharkarama/Passive Mode Screenshot.png"
+import SharkaramaPassive2 from "../../assets/Sharkarama/Passive Mode.png"
+import SharkaramaSharkipedia from "../../assets/Sharkarama/Sharkipedia.png"
 
+import Recyclamation from "../../assets/Recyclamation/Header.png"
+import RecyclamationDay1 from "../../assets/Recyclamation/Day1.jpg"
+import RecyclamationDay4 from "../../assets/Recyclamation/Day4.jpg"
+import RecyclamationDay4Busy from "../../assets/Recyclamation/Day4Busy.jpg"
+import RecyclamationMinigame1 from "../../assets/Recyclamation/Minigame1.jpg"
+import RecyclamationMinigame2 from "../../assets/Recyclamation/Minigame2.jpg"
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
     {
+      src: StellarX,
+      desc: "StellarX Ova",
+      header: "StellarX",
+      paragraph: "No-Code Platform for Organizations.",
+      date: "December 2025 - Present",
+      tech: "Unity 2D, C#",
+      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
+        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
+        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
+        • Implemented both player controllers using one script and an enumeration
+        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
+        • Made dynamic collision behaviour between players and the ball, based on camera position
+        • Created 2D assets for the user interface and in-game obstacles`,
+        media: [
+          { type: "video", src: "https://www.youtube.com/embed/Uwnx93fNxDE?si=QAWJ6IW5AwumRoeF", alt: "StellarX Demo" },
+          { type: "image", src: StellarXAirplane, alt: "StellarX Airplane Screenshot" },
+          { type: "image", src: StellarXWinter, alt: "StellarX Winter Wonderland" },
+        ],
+      links: [
+        { label: "GitHub", url: "https://github.com/DylanPatrascu/Volleybirds" },
+        { label: "Itch.io", url: "https://munchiepunchie.itch.io/volleybirds" }
+      ]
+    },{
+      src: Sharkarama,
+      desc: "Sharkarama",
+      header: "Sharkarama",
+      paragraph: "Collect over 150 real-world species to complete your shark collection.",
+      date: "January 2026 - Present",
+      tech: "Unity 2D, C#, GitHub",
+      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
+        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
+        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
+        • Implemented both player controllers using one script and an enumeration
+        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
+        • Made dynamic collision behaviour between players and the ball, based on camera position
+        • Created 2D assets for the user interface and in-game obstacles`,
+        media: [
+          { type: "video", src: "https://www.youtube.com/embed/hm0Dtv0pKLM?si=ByLQZSPGEURNMY_B", alt: "Sharkarama Trailer" },
+          { type: "image", src: SharkaramaSharks, alt: "Sharkarama Gameplay Screenshot" },
+          { type: "image", src: SharkaramaMenu, alt: "Sharkarama Menu Screenshot" },
+          { type: "image", src: SharkaramaCardOpen, alt: "Sharkarama Card Opening" },
+          { type: "image", src: SharkaramaSharkipedia, alt: "Sharkarama Sharkipedia Screenshot" },
+          { type: "image", src: SharkaramaActiveMode, alt: "Sharkarama Active Mode Screenshot" },
+          { type: "image", src: SharkaramaPassive1, alt: "Sharkarama Gameplay Screenshot 2" },
+          { type: "image", src: SharkaramaPassive2, alt: "Sharkarama Gameplay Screenshot 3" }
+        ],
+      links: [
+        {label: "Steam", url: "https://store.steampowered.com/app/4685050/Sharkarama/"}
+      ]
+    },{
+      src: Recyclamation,
+      desc: "Recyclamation Header",
+      header: "Recyclamation",
+      paragraph: "A gritty sci-fi job simulator.",
+      date: "May 2025",
+      tech: "Unity 2D, C#, GitHub, Procreate",
+      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
+        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
+        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
+        • Implemented both player controllers using one script and an enumeration
+        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
+        • Made dynamic collision behaviour between players and the ball, based on camera position
+        • Created 2D assets for the user interface and in-game obstacles`,
+        media: [
+          { type: "video", src: "https://www.youtube.com/embed/n8FTnjt2zEg?si=PYFG1W5icLLCivvk", alt: "Recyclamation Trailer" },
+          { type: "image", src: RecyclamationDay4Busy, alt: "Recyclamation Screenshot 1" },
+          { type: "image", src: RecyclamationMinigame1, alt: "Recyclamation Screenshot 2" },
+          { type: "image", src: RecyclamationDay4, alt: "Recyclamation Screenshot 3" },
+          { type: "image", src: RecyclamationDay1, alt: "Recyclamation Screenshot 4" },
+          { type: "image", src: RecyclamationMinigame2, alt: "Recyclamation Screenshot 5" },
+        ],
+      links: [
+        { label: "Steam", url: "https://store.steampowered.com/app/4180390/Recyclamation/" }
+      ]
+    },{
       src: VolleyBirds,
       desc: "Volleybirds Header",
       header: "VolleyBirds",
