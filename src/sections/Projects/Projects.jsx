@@ -71,47 +71,92 @@ import RecyclamationDay4 from "../../assets/Recyclamation/Day4.jpg"
 import RecyclamationDay4Busy from "../../assets/Recyclamation/Day4Busy.jpg"
 import RecyclamationMinigame1 from "../../assets/Recyclamation/Minigame1.jpg"
 import RecyclamationMinigame2 from "../../assets/Recyclamation/Minigame2.jpg"
+
+import HoldEmUpSplash from "../../assets/HoldEmUp/HoldEmUpSplash.png"
+import HoldEmUp1 from "../../assets/HoldEmUp/HoldEmUp1.png"
+import HoldEmUp2 from "../../assets/HoldEmUp/HoldEmUp2.jpeg"
+import HoldEmUp3 from "../../assets/HoldEmUp/HoldEmUp3.png"
+
+import StarfisherSplash from "../../assets/Starfisher/StarfisherSplash.png"
+import Starfisher1 from "../../assets/Starfisher/Starfisher1.jpeg"
+import Starfisher2 from "../../assets/Starfisher/Starfisher2.jpeg"
+
 function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const projects = [
     {
+      src: StarfisherSplash,
+      desc: "Starfisher Header",
+      header: "Starfisher",
+      paragraph: "Concordia Game Development Cosmic Jam 2026 Submission.",
+      date: "October 2026",
+      tech: "Godot, GDScript",
+      description: `Serve the crime boss Glorp and use the planets of the Solar System to attract space fish to earn your pay.
+      • Developed the player controller and state machine, implementing core player movement and gameplay logic 
+      • Implemented player animations and integrated them into the gameplay systems to support responsive, fluid interactions 
+      • Designed and programmed the DDR-style combo system for fishing, tying button inputs to the fish-catching mechanic`,
+        media: [
+          { type: "video", src: "https://www.youtube.com/embed/H-6z5Zt9gzs?si=aevHDzcpLKB6TJCY", alt: "Starfisher Demo" },
+          { type: "image", src: Starfisher1, alt: "Starfisher Gameplay" },
+          { type: "image", src: Starfisher2, alt: "Starfisher Gameplay" },
+
+        ],
+      links: [
+        { label: "GitHub", url: "https://github.com/DudeNamedDarcy/CosmicJam2026" },
+        { label: "Itch.io", url: "https://devnameddarcy.itch.io/starfisher" }
+      ]
+    },{
+      src: HoldEmUpSplash,
+      desc: "Hold 'Em Up Header",
+      header: "Hold 'Em Up",
+      paragraph: "Brackeys Game Jam 2026.2 Submission.",
+      date: "September 2026",
+      tech: "Unity, Blender",
+      description: `A poker night turns into a murder mystery where you must play poker with suspects to learn their tells, and interrogate them!\n
+        • Placed 5th in Audio and 42nd Overall out of 2300+ submissions in a week-long jam, held by Popular Game Dev YouTuber, Brackeys, with the theme of "Trust no one"
+        • Project managed a team of 8, dealing with all mediums of the project, and leading daily scrums amongst the team
+        • Took ownership over the 3D poker scene, including the scene design, most asset texturing, and most programming`,
+        media: [
+          { type: "video", src: "https://www.youtube.com/embed/UTp-dMkL-B8?si=sYRcITr4fAKkdxL2", alt: "Hold 'Em Up Demo" },
+          { type: "image", src: HoldEmUp1, alt: "Hold 'Em Up Gameplay" },
+          { type: "image", src: HoldEmUp2, alt: "Hold 'Em Up Gameplay" },
+          { type: "image", src: HoldEmUp3, alt: "Hold 'Em Up Gameplay" },
+
+        ],
+      links: [
+        { label: "GitHub", url: "https://github.com/DylanPatrascu/HoldEmUp" },
+        { label: "Itch.io", url: "https://dylanpatrascu.itch.io/hold-em-up" }
+      ]
+    },{
       src: StellarX,
-      desc: "StellarX Ova",
+      desc: "StellarX OVA Header",
       header: "StellarX",
       paragraph: "No-Code Platform for Organizations.",
       date: "December 2025 - Present",
-      tech: "Unity 2D, C#",
-      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
-        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
-        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
-        • Implemented both player controllers using one script and an enumeration
-        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
-        • Made dynamic collision behaviour between players and the ball, based on camera position
-        • Created 2D assets for the user interface and in-game obstacles`,
+      tech: "Unity, Jira, Confluence",
+      description: `• Identified, documented, and verified bugs, fixes, and new features using tools such as Jira and Gitlab.
+      • Worked closely with developers and cross-functional teams in Agile Scrum sprints to support the development and testing of our SaaS and XR platforms, including daily standups and release testing.
+      • Developed a C# automation script to compare Unity Events CSV and JSON outputs against internal documentation, helping identify inconsistencies and improve data validation workflows.`,
         media: [
           { type: "video", src: "https://www.youtube.com/embed/Uwnx93fNxDE?si=QAWJ6IW5AwumRoeF", alt: "StellarX Demo" },
           { type: "image", src: StellarXAirplane, alt: "StellarX Airplane Screenshot" },
           { type: "image", src: StellarXWinter, alt: "StellarX Winter Wonderland" },
         ],
       links: [
-        { label: "GitHub", url: "https://github.com/DylanPatrascu/Volleybirds" },
-        { label: "Itch.io", url: "https://munchiepunchie.itch.io/volleybirds" }
+        { label: "Website", url: "https://stellarx.ai" }
       ]
     },{
       src: Sharkarama,
-      desc: "Sharkarama",
+      desc: "Sharkarama Header",
       header: "Sharkarama",
       paragraph: "Collect over 150 real-world species to complete your shark collection.",
       date: "January 2026 - Present",
-      tech: "Unity 2D, C#, GitHub",
-      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
-        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
-        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
-        • Implemented both player controllers using one script and an enumeration
-        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
-        • Made dynamic collision behaviour between players and the ball, based on camera position
-        • Created 2D assets for the user interface and in-game obstacles`,
+      tech: "Unity",
+      description: `• Developed an Unity C# editor tool for JSON data importation and updating of shark-related Scriptable Objects, allowing for faster iteration on game balance.
+      • Engineered a save system supporting automatic, event-based, and exit-state persistence for game data, aquarium states, and offline reward tracking.
+      • Created a shark breeding and attribute framework in Unity C# that combined inherited traits to produce unique stat combinations and progression strategies.
+      • Integrated FMOD for all audio, such as music and sound effects, using a sub-module repository architecture.`,
         media: [
           { type: "video", src: "https://www.youtube.com/embed/hm0Dtv0pKLM?si=ByLQZSPGEURNMY_B", alt: "Sharkarama Trailer" },
           { type: "image", src: SharkaramaSharks, alt: "Sharkarama Gameplay Screenshot" },
@@ -130,15 +175,9 @@ function Projects() {
       desc: "Recyclamation Header",
       header: "Recyclamation",
       paragraph: "A gritty sci-fi job simulator.",
-      date: "May 2025",
-      tech: "Unity 2D, C#, GitHub, Procreate",
-      description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
-        • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
-        • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
-        • Implemented both player controllers using one script and an enumeration
-        • Created custom game logic that uses a mix of rally length between players and the highest height to determine a score
-        • Made dynamic collision behaviour between players and the ball, based on camera position
-        • Created 2D assets for the user interface and in-game obstacles`,
+      date: "September 2026 - December 2026",
+      tech: "Unity",
+      description: `• Designed and implemented all systems as the sole developer for the project, including Steamworks integration in Unity, Steam achievements, and branching game endings driven by player decisions`,
         media: [
           { type: "video", src: "https://www.youtube.com/embed/n8FTnjt2zEg?si=PYFG1W5icLLCivvk", alt: "Recyclamation Trailer" },
           { type: "image", src: RecyclamationDay4Busy, alt: "Recyclamation Screenshot 1" },
@@ -152,11 +191,11 @@ function Projects() {
       ]
     },{
       src: VolleyBirds,
-      desc: "Volleybirds Header",
+      desc: "VolleyBirds Header",
       header: "VolleyBirds",
       paragraph: "A nice game of volleyball goes out of control.",
       date: "May 2025",
-      tech: "Unity 2D, C#, GitHub, Procreate",
+      tech: "Unity, Procreate",
       description: `A nice game of volleyball goes out of control and turns into a competitive game of keep it up! Grab a friend (or play alone) and see how high you can get the ball in under a minute without dropping it!\n
         • Placed 18th out of 100+ submissions in a 72-hour game jam with the theme of "Birds" and the limitation of "Under a Minute"
         • Developed a 2D local co-op game in Unity with a team of four, where two players rally a ball and reach the highest possible height
@@ -182,9 +221,9 @@ function Projects() {
       src: BreakingBob,
       desc: "Breaking Bob Header",
       header: "Breaking Bob",
-      paragraph: "He built this city, and he can tear it down.",
+      paragraph: "London Game Jam 2025 Submission.",
       date: "March 2025",
-      tech: "Unity 2D, C#, GitHub",
+      tech: "Unity",
       description: `Knock down buildings and tear the city apart as Bob the construction worker reaches his breaking point. Destroy cops, cars, buildings, and anything in your way trying to clear the city before the timer runs out.\n
         • Created in 6 days for LoJam x GDS 2025 in a a team of three with the theme "Break the System"
         • Developed a dynamic NavMesh system allowing enemies to adapt to destructible environments in real time
@@ -207,9 +246,9 @@ function Projects() {
       src: MicroMovers,
       desc: "Micro Movers Header",
       header: "Micro Movers",
-      paragraph: "Think and shrink!",
+      paragraph: "Western University's Game Design Club's Micro-Jam 2025 Submission",
       date: "Jan 2025",
-      tech: "Unity 2D, C#, Aseprite, GitHub",
+      tech: "Unity, Aseprite",
       description: `Race to collect furniture from the house to your truck!\n
       • Created in 48 hours for GDS Micro-Jam 2025 in a a team of three with the theme "Micro"
       • Implemented player controller, player-environment interactions, and level design
@@ -235,7 +274,7 @@ function Projects() {
       header: "Offshore Adventures",
       paragraph: "All aboard!",
       date: "Sept 2024 – April 2025",
-      tech: "Unity 3D, C#, ShaderGraph, GitHub",
+      tech: "Unity, ShaderGraph",
       description: `A VR simulation for exploring marine ecosystems. Designed for aquariums and public installations, it features intuitive gesture-based controls and accessibility features.\n
       • Developed immersive minigames: satellite tagging, eDNA sampling puzzle, and BRUV deployment simulation
       • Wrote a foliage shader to simulate seaweed swaying
@@ -259,7 +298,7 @@ function Projects() {
       header: "Cannonball Run",
       paragraph: "Buckle up!",
       date: "Jan 2025 – April 2025",
-      tech: "Unity 3D, C#, GitHub, Agile",
+      tech: "Unity",
       description: `Based off of the real-life Cannonball Run race, we created a roguelike 3D racing game with branching tracks, where your goal is to make it to the other side of a cyberpunk America.\n
       • Implemented all acquirable upgrades, traffic, and car controller
       • Created a tree-based track system for progression and player choice
@@ -288,7 +327,7 @@ function Projects() {
       header: "Shift",
       paragraph: "Start your engines!",
       date: "Dec 2024",
-      tech: "Unity 3D, C#, GitHub, Unity Editor",
+      tech: "Unity, Unity Editor",
       description: `A street racing game with reactive audio systems.\n
       • Developed a realistic manual car controller with speedometer and tachometer user interface
       • Created a modular radio system using Scriptable Objects that changes tracks based on gear
@@ -314,7 +353,7 @@ function Projects() {
       header: "Personal Website",
       paragraph: "Yes, this website.",
       date: "Feb 2025 – Present",
-      tech: "React, Vite, Cloudflare, GitHub",
+      tech: "React, Vite, Cloudflare",
       description: `A personal portfolio site built with React.\n
       • Built with React and Vite for a snappy, modern feel
       • Used APCA (Accessible Perceptual Contrast Algorithm) to randomize website theme while maintaining accessibility
@@ -334,7 +373,7 @@ function Projects() {
       header: "Language Localization Tool",
       paragraph: "Bonjour!",
       date: "Nov 2024",
-      tech: "Unity Editor, C#, GitHub",
+      tech: "Unity",
       description: `A Unity editor tool for multi-language support.\n
       • Designed Scriptable Objects with two serialized lists for language keys/values
       • Built a custom Unity Editor window for translators

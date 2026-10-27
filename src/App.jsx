@@ -6,7 +6,7 @@ import Contact from "./sections/Contact/Contact"
 import Footer from './sections/Footer/Footer'
 import NavBar from './sections/Navbar/Navbar'
 import Experience from './sections/Experience/Experience'
-import Community from './sections/Community/Community'
+{/*import Community from './sections/Community/Community'*/}
 
 function App() {
   useEffect(() => {
@@ -34,9 +34,9 @@ function App() {
       <div id="Experience">
         <Experience/>
       </div>
-      <div id="Involvement">
+      {/*<div id="Involvement">
         <Community/>
-      </div>
+      </div>*/}
       <div id="Contact">
         <Contact/>
       </div>

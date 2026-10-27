@@ -30,7 +30,7 @@ function Contact() {
             <span className={styles.copied}>Copied!</span>
           )}
         </li>
-        <li>
+        {/*<li>
           <button
             className={styles.copyBtn}
             onClick={() => handleCopy("(647) 382-3647")}
@@ -41,6 +41,9 @@ function Contact() {
           {copied === "(647) 382-3647" && (
             <span className={styles.copied}>Copied!</span>
           )}
+        </li>*/}
+        <li>
+          <h2>Leave a message!</h2>
         </li>
       </ul>
 
